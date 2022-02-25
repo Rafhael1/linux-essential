@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo apt update -y 
-sudo apt upgrade -y 
+sudo dnf update -y 
+sudo dnf upgrade -y 
 
 echo "Installing Node.js"
 sudo dnf module install nodejs:<stream>
