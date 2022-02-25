@@ -3,7 +3,7 @@ sudo dnf update -y
 sudo dnf upgrade -y 
 
 echo "Installing Node.js"
-sudo dnf module install nodejs:<stream>
+sudo dnf module install nodejs:16
 
 echo -e "Installed Node.js \U2705"
 
