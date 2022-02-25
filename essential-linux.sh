@@ -16,6 +16,8 @@ sudo npm install -g @nestjs/cli
 echo "Installed Nest CLI \U2705"
 
 echo "Installing VSCODE"
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 sudo dnf install code
 echo "Installed VSCODE \U2705"
 
